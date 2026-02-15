@@ -50,22 +50,4 @@ For development it's recommended to keep unminified sources and re-generate mini
 3. Make changes and commit with clear messages.
 4. Push and open a pull request describing the change.
 
-If you plan to add tests, a build step, or Node tooling (npm, webpack, etc.), add instructions here and include a `package.json`.
-
-## License
-
-Add a license file (e.g., `LICENSE`) and update this section. If you're not sure, consider the MIT License for permissive open-source use.
-
-## Contact
-
-Owner: archi215
-
----
-
-If you'd like, I can:
-
-- Add a LICENSE file (MIT/Apache/BSD) and update the README.
-- Create a small dev script (`package.json`) to run a local server and live reload.
-- Expand the README with screenshots, sample data files, or usage examples.
-
-Tell me which of these (if any) you'd like next.
+Made By Archismaan Shreyas

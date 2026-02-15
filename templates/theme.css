@@ -1,0 +1,54 @@
+/* Theme overrides for PROPERTY_TAX_EVALUATION index page */
+:root{
+  --bg:#0f1724; /* deep navy */
+  --card:#0b1320; /* slightly lighter card */
+  --muted:#9aa6b2;
+  --accent:#1fb6ff; /* bright cyan accent */
+  --accent-2:#ffb86b; /* warm accent */
+  --text:#e6eef6;
+}
+
+html,body{height:100%;}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg) 0%, #071021 100%);
+  color:var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+.container{
+  max-width:980px;
+  margin:48px auto;
+  padding:28px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+  border-radius:12px;
+  box-shadow:0 8px 30px rgba(2,6,23,0.6);
+}
+
+.title{font-size:2.2rem; margin:0 0 6px; color:var(--accent);}
+.subtitle{color:var(--muted); margin-top:0;}
+
+header{display:flex;align-items:center;gap:18px}
+header img{width:64px;height:64px;border-radius:8px;object-fit:cover}
+
+section{margin-bottom:26px}
+section h2{display:inline-block; margin:0 0 12px; color:var(--text); font-weight:600;}
+section h2:after{content:''; display:block; height:3px; width:56px; background:linear-gradient(90deg,var(--accent),var(--accent-2)); border-radius:3px; margin-top:8px}
+
+.readme{background:rgba(255,255,255,0.03); color:var(--text); border:1px solid rgba(255,255,255,0.03); padding:14px; border-radius:8px}
+
+.team{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.team strong{color:var(--accent-2)}
+
+footer{border-top:1px solid rgba(255,255,255,0.03); padding-top:12px; color:var(--muted); font-size:0.95rem}
+
+a{color:var(--accent)}
+
+@media (max-width:700px){
+  .container{margin:18px;padding:18px}
+  .team{grid-template-columns:1fr}
+  .title{font-size:1.6rem}
+}
